@@ -1,0 +1,40 @@
+================================================================================
+PROBLEM # SEPM-001: TEST CASE INPUT SPECIFICATION
+Title: Comparison of Thread Counting Using Static and Non-Static Variables
+Class Name: Tahmid_Thread (and ThreadCounterLab)
+================================================================================
+
+Command Line Format:
+  java Tahmid_Thread <Threads (T)> <IncrementsPerThread (N)> <useThreadSafe (true|false)>
+  java ThreadCounterLab <Threads (T)> <IncrementsPerThread (N)> <useThreadSafe (true|false)>
+
+--------------------------------------------------------------------------------
+Test Case | Threads (T) | Increments/Thread (N) | Expected Total (T * N)
+--------------------------------------------------------------------------------
+TC1       | 1           | 1,000                 | 1,000
+TC2       | 2           | 10,000                | 20,000
+TC3       | 5           | 10,000                | 50,000
+TC4       | 10          | 50,000                | 500,000
+TC5       | 20          | 50,000                | 1,000,000
+TC6       | 50          | 50,000                | 2,500,000
+TC7       | 100         | 50,000                | 5,000,000
+--------------------------------------------------------------------------------
+
+1. Experiment A Commands (Thread-Safe Static Counter - AtomicLong, mode = true):
+   java Tahmid_Thread 1 1000 true
+   java Tahmid_Thread 2 10000 true
+   java Tahmid_Thread 5 10000 true
+   java Tahmid_Thread 10 50000 true
+   java Tahmid_Thread 20 50000 true
+   java Tahmid_Thread 50 50000 true
+   java Tahmid_Thread 100 50000 true
+
+2. Experiment B Commands (Unsynchronized Static Counter - static long, mode = false):
+   (Executed 5 times per thread count to observe race conditions and variation)
+   java Tahmid_Thread 1 1000 false
+   java Tahmid_Thread 2 10000 false
+   java Tahmid_Thread 5 10000 false
+   java Tahmid_Thread 10 50000 false
+   java Tahmid_Thread 20 50000 false
+   java Tahmid_Thread 50 50000 false
+   java Tahmid_Thread 100 50000 false
