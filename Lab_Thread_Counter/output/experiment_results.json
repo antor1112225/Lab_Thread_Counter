@@ -1,0 +1,20 @@
+{
+  "test_cases": [
+    { "id": "TC1", "T": 1, "N": 1000, "expected": 1000 },
+    { "id": "TC2", "T": 2, "N": 10000, "expected": 20000 },
+    { "id": "TC3", "T": 5, "N": 10000, "expected": 50000 },
+    { "id": "TC4", "T": 10, "N": 50000, "expected": 500000 },
+    { "id": "TC5", "T": 20, "N": 50000, "expected": 1000000 },
+    { "id": "TC6", "T": 50, "N": 50000, "expected": 2500000 },
+    { "id": "TC7", "T": 100, "N": 50000, "expected": 5000000 }
+  ],
+  "summary": {
+    "TC1": { "safe_S": 1000, "I": 1000, "safe_pct": 0.0, "unsafe_runs_S": [1000, 1000, 1000, 1000, 1000], "unsafe_avg_S": 1000.0, "unsafe_avg_diff": 0.0, "unsafe_avg_pct": 0.0 },
+    "TC2": { "safe_S": 20000, "I": 20000, "safe_pct": 0.0, "unsafe_runs_S": [13896, 11539, 10465, 11286, 11393], "unsafe_avg_S": 11715.8, "unsafe_avg_diff": 8284.2, "unsafe_avg_pct": 41.421 },
+    "TC3": { "safe_S": 50000, "I": 50000, "safe_pct": 0.0, "unsafe_runs_S": [20394, 12121, 14942, 14050, 14180], "unsafe_avg_S": 15137.4, "unsafe_avg_diff": 34862.6, "unsafe_avg_pct": 69.7252 },
+    "TC4": { "safe_S": 500000, "I": 500000, "safe_pct": 0.0, "unsafe_runs_S": [85602, 65429, 69440, 96393, 67908], "unsafe_avg_S": 76954.4, "unsafe_avg_diff": 423045.6, "unsafe_avg_pct": 84.6091 },
+    "TC5": { "safe_S": 1000000, "I": 1000000, "safe_pct": 0.0, "unsafe_runs_S": [105721, 118127, 101807, 92051, 110884], "unsafe_avg_S": 105718.0, "unsafe_avg_diff": 894282.0, "unsafe_avg_pct": 89.4282 },
+    "TC6": { "safe_S": 2500000, "I": 2500000, "safe_pct": 0.0, "unsafe_runs_S": [220771, 197469, 189211, 220547, 181570], "unsafe_avg_S": 201913.6, "unsafe_avg_diff": 2298086.4, "unsafe_avg_pct": 91.9235 },
+    "TC7": { "safe_S": 5000000, "I": 5000000, "safe_pct": 0.0, "unsafe_runs_S": [1065553, 1779254, 2077625, 2310146, 914570], "unsafe_avg_S": 1629429.6, "unsafe_avg_diff": 3370570.4, "unsafe_avg_pct": 67.4114 }
+  }
+}
