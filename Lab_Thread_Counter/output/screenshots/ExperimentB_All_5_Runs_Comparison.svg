@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1667 384" width="100%">
+<rect width="1667" height="384" rx="10" fill="#0f141c"/>
+<rect width="1667" height="44" rx="10" fill="#1c2330"/>
+<circle cx="25" cy="21" r="7" fill="#ff5f56"/>
+<circle cx="49" cy="21" r="7" fill="#ffbd2e"/>
+<circle cx="73" cy="21" r="7" fill="#27c93f"/>
+<text x="105" y="27" fill="#c8d4e6" font-family="Consolas, monospace" font-size="16" font-weight="bold">Windows PowerShell — All 5 Repeated Unsynchronized Runs Comparison (TC1 - TC7)</text>
+<text x="28" y="82" fill="#58d68d" font-family="Consolas, monospace" font-size="16" xml:space="preserve">PS C:\Lab_Thread_Counter&gt; # Summary of 5 Repeated Unsynchronized Runs per Thread Count (TC1 - TC7)</text>
+<text x="28" y="106" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">==========================================================================================================================================</text>
+<text x="28" y="130" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Test | Threads | Inc/Thread | Expected(I) | Run 1 (S / %Diff)   | Run 2 (S / %Diff)   | Run 3 (S / %Diff)   | Run 4 (S / %Diff)   | Run 5 (S / %Diff)   | Avg %Diff</text>
+<text x="28" y="154" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">------------------------------------------------------------------------------------------------------------------------------------------</text>
+<text x="28" y="178" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">TC1  |       1 |      1,000 |       1,000 |    1000 ( 0.00%) |    1000 ( 0.00%) |    1000 ( 0.00%) |    1000 ( 0.00%) |    1000 ( 0.00%) |   0.00%</text>
+<text x="28" y="202" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">TC2  |       2 |     10,000 |      20,000 |   13896 (30.52%) |   11539 (42.30%) |   10465 (47.67%) |   11286 (43.57%) |   11393 (43.03%) |  41.42%</text>
+<text x="28" y="226" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">TC3  |       5 |     10,000 |      50,000 |   20394 (59.21%) |   12121 (75.76%) |   14942 (70.12%) |   14050 (71.90%) |   14180 (71.64%) |  69.73%</text>
+<text x="28" y="250" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">TC4  |      10 |     50,000 |     500,000 |   85602 (82.88%) |   65429 (86.91%) |   69440 (86.11%) |   96393 (80.72%) |   67908 (86.42%) |  84.61%</text>
+<text x="28" y="274" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">TC5  |      20 |     50,000 |   1,000,000 |  105721 (89.43%) |  118127 (88.19%) |  101807 (89.82%) |   92051 (90.79%) |  110884 (88.91%) |  89.43%</text>
+<text x="28" y="298" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">TC6  |      50 |     50,000 |   2,500,000 |  220771 (91.17%) |  197469 (92.10%) |  189211 (92.43%) |  220547 (91.18%) |  181570 (92.74%) |  91.92%</text>
+<text x="28" y="322" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">TC7  |     100 |     50,000 |   5,000,000 | 1065553 (78.69%) | 1779254 (64.41%) | 2077625 (58.45%) | 2310146 (53.80%) |  914570 (81.71%) |  67.41%</text>
+<text x="28" y="346" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">==========================================================================================================================================</text>
+</svg>

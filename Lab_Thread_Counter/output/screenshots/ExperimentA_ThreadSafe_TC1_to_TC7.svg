@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 1968" width="100%">
+<rect width="1180" height="1968" rx="10" fill="#0f141c"/>
+<rect width="1180" height="44" rx="10" fill="#1c2330"/>
+<circle cx="25" cy="21" r="7" fill="#ff5f56"/>
+<circle cx="49" cy="21" r="7" fill="#ffbd2e"/>
+<circle cx="73" cy="21" r="7" fill="#27c93f"/>
+<text x="105" y="27" fill="#c8d4e6" font-family="Consolas, monospace" font-size="16" font-weight="bold">Windows PowerShell — Experiment A: Thread-Safe Static Counter (AtomicLong, mode = true) [TC1 - TC7]</text>
+<text x="28" y="82" fill="#58d68d" font-family="Consolas, monospace" font-size="16" xml:space="preserve">PS C:\Lab_Thread_Counter&gt; javac Tahmid_Thread.java ThreadCounterLab.java</text>
+<text x="28" y="106" fill="#58d68d" font-family="Consolas, monospace" font-size="16" xml:space="preserve">PS C:\Lab_Thread_Counter&gt; java Tahmid_Thread 1 1000 true</text>
+<text x="28" y="130" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">====================================================</text>
+<text x="28" y="154" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Mode                : Thread-Safe (AtomicLong)</text>
+<text x="28" y="178" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Threads (T)         : 1</text>
+<text x="28" y="202" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Increments/Thread(N): 1000</text>
+<text x="28" y="226" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Expected Count (T*N): 1000</text>
+<text x="28" y="250" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Static Counter (S)  : 1000</text>
+<text x="28" y="274" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Non-Static Total (I): 1000</text>
+<text x="28" y="298" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Absolute Diff |S-I| : 0</text>
+<text x="28" y="322" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Percentage Diff (%) : 0.0000%</text>
+<text x="28" y="346" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">====================================================</text>
+<text x="28" y="370" fill="#58d68d" font-family="Consolas, monospace" font-size="16" xml:space="preserve">PS C:\Lab_Thread_Counter&gt; java Tahmid_Thread 2 10000 true</text>
+<text x="28" y="394" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">====================================================</text>
+<text x="28" y="418" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Mode                : Thread-Safe (AtomicLong)</text>
+<text x="28" y="442" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Threads (T)         : 2</text>
+<text x="28" y="466" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Increments/Thread(N): 10000</text>
+<text x="28" y="490" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Expected Count (T*N): 20000</text>
+<text x="28" y="514" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Static Counter (S)  : 20000</text>
+<text x="28" y="538" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Non-Static Total (I): 20000</text>
+<text x="28" y="562" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Absolute Diff |S-I| : 0</text>
+<text x="28" y="586" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Percentage Diff (%) : 0.0000%</text>
+<text x="28" y="610" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">====================================================</text>
+<text x="28" y="634" fill="#58d68d" font-family="Consolas, monospace" font-size="16" xml:space="preserve">PS C:\Lab_Thread_Counter&gt; java Tahmid_Thread 5 10000 true</text>
+<text x="28" y="658" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">====================================================</text>
+<text x="28" y="682" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Mode                : Thread-Safe (AtomicLong)</text>
+<text x="28" y="706" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Threads (T)         : 5</text>
+<text x="28" y="730" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Increments/Thread(N): 10000</text>
+<text x="28" y="754" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Expected Count (T*N): 50000</text>
+<text x="28" y="778" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Static Counter (S)  : 50000</text>
+<text x="28" y="802" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Non-Static Total (I): 50000</text>
+<text x="28" y="826" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Absolute Diff |S-I| : 0</text>
+<text x="28" y="850" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Percentage Diff (%) : 0.0000%</text>
+<text x="28" y="874" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">====================================================</text>
+<text x="28" y="898" fill="#58d68d" font-family="Consolas, monospace" font-size="16" xml:space="preserve">PS C:\Lab_Thread_Counter&gt; java Tahmid_Thread 10 50000 true</text>
+<text x="28" y="922" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">====================================================</text>
+<text x="28" y="946" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Mode                : Thread-Safe (AtomicLong)</text>
+<text x="28" y="970" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Threads (T)         : 10</text>
+<text x="28" y="994" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Increments/Thread(N): 50000</text>
+<text x="28" y="1018" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Expected Count (T*N): 500000</text>
+<text x="28" y="1042" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Static Counter (S)  : 500000</text>
+<text x="28" y="1066" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Non-Static Total (I): 500000</text>
+<text x="28" y="1090" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Absolute Diff |S-I| : 0</text>
+<text x="28" y="1114" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Percentage Diff (%) : 0.0000%</text>
+<text x="28" y="1138" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">====================================================</text>
+<text x="28" y="1162" fill="#58d68d" font-family="Consolas, monospace" font-size="16" xml:space="preserve">PS C:\Lab_Thread_Counter&gt; java Tahmid_Thread 20 50000 true</text>
+<text x="28" y="1186" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">====================================================</text>
+<text x="28" y="1210" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Mode                : Thread-Safe (AtomicLong)</text>
+<text x="28" y="1234" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Threads (T)         : 20</text>
+<text x="28" y="1258" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Increments/Thread(N): 50000</text>
+<text x="28" y="1282" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Expected Count (T*N): 1000000</text>
+<text x="28" y="1306" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Static Counter (S)  : 1000000</text>
+<text x="28" y="1330" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Non-Static Total (I): 1000000</text>
+<text x="28" y="1354" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Absolute Diff |S-I| : 0</text>
+<text x="28" y="1378" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Percentage Diff (%) : 0.0000%</text>
+<text x="28" y="1402" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">====================================================</text>
+<text x="28" y="1426" fill="#58d68d" font-family="Consolas, monospace" font-size="16" xml:space="preserve">PS C:\Lab_Thread_Counter&gt; java Tahmid_Thread 50 50000 true</text>
+<text x="28" y="1450" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">====================================================</text>
+<text x="28" y="1474" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Mode                : Thread-Safe (AtomicLong)</text>
+<text x="28" y="1498" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Threads (T)         : 50</text>
+<text x="28" y="1522" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Increments/Thread(N): 50000</text>
+<text x="28" y="1546" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Expected Count (T*N): 2500000</text>
+<text x="28" y="1570" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Static Counter (S)  : 2500000</text>
+<text x="28" y="1594" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Non-Static Total (I): 2500000</text>
+<text x="28" y="1618" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Absolute Diff |S-I| : 0</text>
+<text x="28" y="1642" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Percentage Diff (%) : 0.0000%</text>
+<text x="28" y="1666" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">====================================================</text>
+<text x="28" y="1690" fill="#58d68d" font-family="Consolas, monospace" font-size="16" xml:space="preserve">PS C:\Lab_Thread_Counter&gt; java Tahmid_Thread 100 50000 true</text>
+<text x="28" y="1714" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">====================================================</text>
+<text x="28" y="1738" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Mode                : Thread-Safe (AtomicLong)</text>
+<text x="28" y="1762" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Threads (T)         : 100</text>
+<text x="28" y="1786" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Increments/Thread(N): 50000</text>
+<text x="28" y="1810" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Expected Count (T*N): 5000000</text>
+<text x="28" y="1834" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Static Counter (S)  : 5000000</text>
+<text x="28" y="1858" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Non-Static Total (I): 5000000</text>
+<text x="28" y="1882" fill="#e1e8f0" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Absolute Diff |S-I| : 0</text>
+<text x="28" y="1906" fill="#f7dc6f" font-family="Consolas, monospace" font-size="16" xml:space="preserve">Percentage Diff (%) : 0.0000%</text>
+<text x="28" y="1930" fill="#5dade2" font-family="Consolas, monospace" font-size="16" xml:space="preserve">====================================================</text>
+</svg>
